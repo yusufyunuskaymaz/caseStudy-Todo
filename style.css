@@ -6,6 +6,7 @@
 
 body{
     background-color: #F5F5F5;
+    font-family: 'Inter', sans-serif;
 }
 
 main{
@@ -22,9 +23,49 @@ main{
     background-color: #FFFFFF;
 }
 
+h1{
+    font-family: 'Rubik', sans-serif;
+    font-size: 3rem;
+    color: #11175E;
+
+}
+
 .todo{
-    width: 70%;
+    width: 60%;
     height: 100%;
-    background-color: rgb(191, 199, 196);
+    /* background-color: rgb(191, 199, 196); */
     margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.todo input {
+    border: none;
+    outline: none;
+    margin-left: .5rem;
+    color: #B1BACB;
+    font-weight: ;
+
+}
+::placeholder{
+    color: #B1BACB;
+}
+
+.search{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    height: 3.2rem;
+    align-items: center;
+    border: 1px solid #EEEEEE;
+    border-radius: .4rem;
+}
+
+.search button {
+    padding: .5rem 1rem;
+    background-color: #2D70FD;
+    border: none;
+    color: #FFFFFF;
+    font-size: 1.2rem;
+    border-radius: .4rem;
+    margin-right: .4rem;
 }
