@@ -27,15 +27,18 @@ h1{
     font-family: 'Rubik', sans-serif;
     font-size: 3rem;
     color: #11175E;
+    /* margin-top:2rem; */
 
 }
 
 .todo{
     width: 60%;
     height: 100%;
-    /* background-color: rgb(191, 199, 196); */
     margin: 0 auto;
     padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 7% 0;
 }
 
 .todo input {
@@ -43,8 +46,6 @@ h1{
     outline: none;
     margin-left: .5rem;
     color: #B1BACB;
-    font-weight: ;
-
 }
 ::placeholder{
     color: #B1BACB;
@@ -61,11 +62,31 @@ h1{
 }
 
 .search button {
-    padding: .5rem 1rem;
+    padding: 1rem 1.5rem;
     background-color: #2D70FD;
     border: none;
     color: #FFFFFF;
-    font-size: 1.2rem;
+    font-size: 1rem;
     border-radius: .4rem;
     margin-right: .4rem;
+}
+
+.todos{
+    margin-left: 1.2rem;
+}
+
+.todos ul li{
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    color: #001747;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    list-style-type: none;
+}
+
+.todos ul li .fa-circle{
+    font-size: 1.5rem;
+    color: #EEEEEE;
+    margin-right: 1rem;
 }
