@@ -106,7 +106,7 @@ h1{
     cursor: pointer;
 }
 
-.done{
+.completed{
     color: #8F98A8;
     text-decoration: line-through;
 }

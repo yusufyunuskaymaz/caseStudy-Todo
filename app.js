@@ -19,4 +19,18 @@ const addTodo = ()=> {
     }
 }
 
+const completed = (e)=>{
+
+    if(e.target.className.includes("fa-regular")){
+        console.log("evet")
+        
+       }
+
+   
+
+   
+
+}
+
 addButton.addEventListener("click", addTodo)
+todoUl.addEventListener("click", completed)
