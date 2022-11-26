@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: #F5F5F5;
+    background-color: #F5F9FF;
     font-family: 'Inter', sans-serif;
 }
 
@@ -19,15 +19,17 @@ main{
 
 .container{
     width: 70%;
-    height: 80%;
+    height: 90%;
     background-color: #FFFFFF;
+    border-radius: 2rem;
+    border: .2rem solid #F5F5F5;
 }
 
 h1{
     font-family: 'Rubik', sans-serif;
     font-size: 3rem;
     color: #11175E;
-    /* margin-top:2rem; */
+    margin-top:2rem;
 
 }
 
@@ -38,6 +40,7 @@ h1{
     padding: 2rem 0;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     gap: 7% 0;
 }
 
@@ -89,4 +92,34 @@ h1{
     font-size: 1.5rem;
     color: #EEEEEE;
     margin-right: 1rem;
+}
+.todos ul li .fa-circle-check{
+    font-size: 1.5rem;
+    color: #00D8A7;
+    margin-right: 1rem;
+}
+
+
+
+.todos ul li:hover{
+    color: #2D70FD;
+    cursor: pointer;
+}
+
+.done{
+    color: #8F98A8;
+    text-decoration: line-through;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #B1BACB;
+}
+
+hr{
+    margin-bottom: 2rem;
+    color: #EEEEEE;
+    height: .5px;
 }
