@@ -47,8 +47,8 @@ h1{
 .todo input {
     border: none;
     outline: none;
-    margin-left: .5rem;
-    color: #B1BACB;
+    margin-left: 1rem;
+    color: #001747;
 }
 ::placeholder{
     color: #B1BACB;
@@ -58,20 +58,21 @@ h1{
     display: flex;
     justify-content: space-between;
     background-color: white;
-    height: 3.2rem;
+    height: 3.4rem;
     align-items: center;
     border: 1px solid #EEEEEE;
     border-radius: .4rem;
 }
 
 .search button {
-    padding: 1rem 1.5rem;
+    padding: .8rem 1.3rem;
     background-color: #2D70FD;
     border: none;
     color: #FFFFFF;
     font-size: 1rem;
     border-radius: .4rem;
     margin-right: .4rem;
+    cursor: pointer;
 }
 
 .todos{

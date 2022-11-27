@@ -31,6 +31,12 @@ const addTodo = ()=> {
     }
 }
 
+const submit = (e)=>{
+    if(e.key == "Enter"){
+        addTodo()
+    }
+}
+
 const completed = (e)=>{
     if(e.target.className == "fa-regular fa-circle"){
         e.target.className = "fa-solid fa-circle-check"
@@ -50,3 +56,4 @@ const clearTodos = ()=>{
 addButton.addEventListener("click", addTodo)
 todoUl.addEventListener("click", completed)
 clearAll.addEventListener("click", clearTodos)
+input.addEventListener("keyup", submit)
