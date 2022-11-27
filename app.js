@@ -11,8 +11,11 @@ const addTodo = ()=> {
     }else{
         const li = document.createElement("li")
         const icon = document.createElement("i")
+        const span = document.createElement("span")
         icon.className = "fa-regular fa-circle"
-        li.innerText = input.value
+        span.innerText = input.value
+        li.appendChild(span)
+        console.log(li);
         li.prepend(icon)
         todoUl.prepend(li)
         input.value = ""
@@ -21,10 +24,15 @@ const addTodo = ()=> {
 
 const completed = (e)=>{
 
-    if(e.target.className.includes("fa-regular")){
-        console.log("evet")
-        
-       }
+
+
+    if(e.target.className == "fa-regular fa-circle"){
+        e.target.className = "fa-solid fa-circle-check"
+        e.target.nextElementSibling.className = "completed"
+    }else if(e.target.className == "fa-solid fa-circle-check"){
+        e.target.className = "fa-regular fa-circle"
+        e.target.nextElementSibling.className = ""
+    }
 
    
 
